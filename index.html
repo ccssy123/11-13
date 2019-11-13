@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale=2">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<style type="text/css">
+	button{
+		display: block;
+	}
+.zoomIn {
+  animation-duration: 3s; 
+}
+.zoomOut {
+  animation-duration: 3s; 
+}
+.aaa{
+	text-align: center;
+}
+.a-1{
+	font-size: 60px;
+	margin-top: 100px;
+}
+@keyframes oxxo{
+    from{
+        left:0;
+        opacity: 100;
+    }
+    to{
+        left:100;
+        opacity: 0;
+    }
+}
+</style>
+<body>
+<div style=""class="aaa animated  zoomIn ">
+	<div style="cursor: pointer;"class="a-1" onclick="myFunction()">Try it</div>
+	<div style="cursor: pointer;"class="a-1" onclick="myFunction()">Try it-2</div>
+	<div style="cursor: pointer;"class="a-1" onclick="myFunction()">Try it-3</div>
+	<div style="cursor: pointer;"class="a-1" onclick="myFunction()">Try it-4</div>
+</div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js
+"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript"> 
+AOS.init();
+	
+function myFunction() {
+  $("body").addClass("animated zoomOut delay-.5s")
+  setInterval(function(){location.href='index-2.html'}, 1000);
+}
+
+
+</script>
+</html>
